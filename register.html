@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Iniciar Sesión</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-800 text-white">
+    <header class="bg-gray-900 py-4">
+        <div class="w-[90%] m-auto font-bold relative overflow-hidden">
+            <img class="w-10 h-10" src="./img/Logo.png">
+        </div>
+    </header>
+
+    <div class="my-10">
+        <div class="text-4xl font-bold text-center">Registro</div>
+        <div class="w-[500px] m-auto mt-4 flex justify-center">
+            <form class="bg-gray-900 w-full p-4 rounded" id="formulario">
+                <div class="w-full relative mb-4">
+                    <label
+                        class="absolute py-[18px] px-0 left-4 text-gray-400 duration-[.4s] ease-[cubic-bezier(.25,.8,.5,1)]"
+                        for="nombre">Nombre</label>
+                    <input
+                        class="px-4 py-3.5 block w-full bg-gray-900 border-2 border-gray-500 text-lg rounded outline-none focus:border-blue-500 transition-all duration-[.4s] ease-linear"
+                        type="text" name="nombre" id="nombre" autocomplete="off" pattern="[A-Za-z]+">
+                </div>
+                <div class="w-full relative mb-4">
+                    <label
+                        class="absolute py-[18px] px-0 left-4 text-gray-400 duration-[.4s] ease-[cubic-bezier(.25,.8,.5,1)]"
+                        for="apellido">Apellido</label>
+                    <input
+                        class="px-4 py-3.5 block w-full bg-gray-900 border-2 border-gray-500 text-lg rounded outline-none focus:border-blue-500 transition-all duration-[.4s] ease-linear"
+                        type="text" name="apellido" id="apellido" autocomplete="off" pattern="[A-Za-z]+">
+                </div>
+                <div class="w-full relative mb-4">
+                    <label
+                        class="absolute py-[18px] px-0 left-4 text-gray-400 duration-[.4s] ease-[cubic-bezier(.25,.8,.5,1)]"
+                        for="email">Correo</label>
+                    <input
+                        class="px-4 py-3.5 block w-full bg-gray-900 border-2 border-gray-500 text-lg rounded outline-none focus:border-blue-500 transition-all duration-[.4s] ease-linear"
+                        type="text" name="email" id="email" autocomplete="off">
+                </div>
+                <div class="w-full relative mb-4">
+                    <label
+                        class="absolute py-[18px] px-0 left-4 text-gray-400 duration-[.4s] ease-[cubic-bezier(.25,.8,.5,1)]"
+                        for="password">Contraseña</label>
+                    <input
+                        class="px-4 py-3.5 block w-full bg-gray-900 border-2 border-gray-500 text-lg rounded outline-none focus:border-blue-500 transition-all duration-[.4s] ease-linear"
+                        type="password" name="password" id="password" autocomplete="off">
+                </div>
+                <div class="w-full relative mb-4">
+                    <label
+                        class="absolute py-[18px] px-0 left-4 text-gray-400 duration-[.4s] ease-[cubic-bezier(.25,.8,.5,1)]"
+                        for="password2">Repetir Contraseña</label>
+                    <input
+                        class="px-4 py-3.5 block w-full bg-gray-900 border-2 border-gray-500 text-lg rounded outline-none focus:border-blue-500 transition-all duration-[.4s] ease-linear"
+                        type="password" name="password2" id="password2" autocomplete="off">
+                </div>
+                <button class="block w-full py-3 bg-blue-700 text-lg font-bold" id="register">Registrate</button>
+                <div class="my-2 text-center text-lg">o</div>
+                <button class="block w-full py-3 border-[3px] border-blue-700 text-lg font-bold" id="login">Iniciar Sesión</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="js/register.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://kit.fontawesome.com/a9439cfc36.js" crossorigin="anonymous"></script>
+</script>
+</body>
+
+</html>
